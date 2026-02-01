@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Links Directory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">AffiliateHub</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#links">All Links</a>
+                <a href="/admin" class="admin-link">Admin</a>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Find the Best Affiliate Links</h1>
+            <p>Curated collection of top affiliate programs and products</p>
+            <a href="#links" class="btn">Browse Links</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="categories-grid" id="categoriesContainer">
+                <!-- Categories will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Affiliate Links -->
+    <section class="links" id="links">
+        <div class="container">
+            <h2>Featured Affiliate Links</h2>
+            <div class="filter-bar">
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="Search links...">
+            </div>
+            <div class="links-grid" id="linksContainer">
+                <!-- Links will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AffiliateHub. All rights reserved.</p>
+            <p>Admin: <a href="/admin/login">Login</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
